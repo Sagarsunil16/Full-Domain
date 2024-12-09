@@ -1,7 +1,7 @@
 const fetchData = (url)=>{
     return new Promise((resolve,reject)=>{
         setTimeout(()=>{
-            if(url ==='vaild-url' || url=== 'another-valid-url'){
+            if(url ==='valid-url' || url=== 'another-valid-url'){
                 resolve(`Data from ${url}`)
             }
             else{
@@ -11,7 +11,7 @@ const fetchData = (url)=>{
     })
 }
 //Chain of Promises
-fetchData('vaild-url')
+fetchData('valid-url')
 .then((data)=>{
     console.log('step 1:',data)
     return fetchData('another-valid-url')
@@ -30,7 +30,7 @@ fetchData('vaild-url')
 //Equivalent Using async/await
 const processData = async()=>{
     try {
-        const step1 = await fetchData('vaild-url')
+        const step1 = await fetchData('valid-url')
         console.log('Step 1:',step1)
 
         const step2 = await fetchData('another-valid-url')
