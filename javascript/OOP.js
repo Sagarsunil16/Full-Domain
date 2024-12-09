@@ -15,9 +15,8 @@ class vehicle{
 
 class car extends vehicle{
     constructor(make,model,year,fuelType,numberOfDoors){
-        super(make,model,year,)
-
-        if(!['Petrol','Diesel','Electric'].includes(this.fuelType)){
+        super(make,model,year)
+        if(!['Petrol','Diesel','Electric'].includes(fuelType)){
             throw new Error("Invalid Fuel Type")
         }
         if(this.numberOfDoors<2 || this.numberOfDoors>5){
@@ -34,6 +33,7 @@ class car extends vehicle{
     }
 }
 
+try {
 const bmw = new car('BMW ','M2 ',2023,'Petrol',5)
 bmw.start()
 bmw.stop()
@@ -41,3 +41,6 @@ bmw.getDetails()
 
 const Jeep = new car('jeep','Wrangler',2022,'Diesel',5)
 Jeep.start()
+} catch (error) {
+    console.log(error.message)
+}
