@@ -3,10 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DOM Manipulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #item-list {
+            list-style: none;
+            padding: 0;
+        }
+        #item-list li {
+            margin: 5px 0;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Javascript</h1>
-    <script src="./promise.js"></script>
+    <h1>Dynamic DOM Manipulation</h1>
+    <button id="add-item">Add Item</button>
+    <button id="remove-item">Remove Last Item</button>
+    <ul id="item-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <input type="text" id="key-press-input" placeholder="Type something..." />
+    <p id="key-press-output"></p>
+    <script src="./Dom.js"></script>
 </body>
 </html>
