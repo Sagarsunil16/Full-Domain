@@ -7,3 +7,7 @@ var greet;
 greet = greetuser;
 var newUser = { name: "Sagar", age: 23 };
 greet(newUser);
+var sum = function (a, b) {
+    console.log(a + b);
+};
+sum(1, 2);
