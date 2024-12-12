@@ -15,8 +15,8 @@ let newUser = {name:"Sagar",age:23}
 greet(newUser)
 
 type add = (x:number,y:number)=>void
-let sum:add = (a,b)=>{
+let summ:add = (a,b)=>{
     console.log(a+b)
 }
 
-sum(1,2)
+summ(1,2)

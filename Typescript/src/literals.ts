@@ -1,4 +1,4 @@
-function roleMessage(role:'ADMIN' | 'USER' | 'READ_WRITE'){
+function roleMessages(role:'ADMIN' | 'USER' | 'READ_WRITE'){
     switch(role){
         case 'ADMIN':
         console.log('you have admin permission on this site');
@@ -14,4 +14,4 @@ function roleMessage(role:'ADMIN' | 'USER' | 'READ_WRITE'){
     }
 }
 
-roleMessage('ADMIN')
+roleMessages('ADMIN')

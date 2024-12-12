@@ -1,4 +1,5 @@
-function roleMessage(role) {
+"use strict";
+function roleMessages(role) {
     switch (role) {
         case 'ADMIN':
             console.log('you have admin permission on this site');
@@ -13,4 +14,4 @@ function roleMessage(role) {
             console.log("Unknown user Permission");
     }
 }
-roleMessage('ADMIN');
+roleMessages('ADMIN');

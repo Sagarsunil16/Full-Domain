@@ -1,3 +1,4 @@
+"use strict";
 var Roles;
 (function (Roles) {
     Roles[Roles["ADMIN"] = 0] = "ADMIN";
@@ -5,7 +6,7 @@ var Roles;
     Roles[Roles["WRITE_ONLY"] = 2] = "WRITE_ONLY";
     Roles[Roles["READ_WRITE"] = 3] = "READ_WRITE";
 })(Roles || (Roles = {}));
-var user = {
+const user = {
     name: "Rahul",
     age: 30,
     gender: "male",

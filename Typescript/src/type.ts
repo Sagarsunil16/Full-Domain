@@ -3,7 +3,7 @@ const str :stringType = 'sagar';
 
 type stringOrNumber = string|number;
 
-function printStatus(message:string,code:stringOrNumber){
+function printStatuses(message:string,code:stringOrNumber){
     if(typeof code == 'string'){
         console.log(`${message}. Status code:${code.trim()}`)
     }else{
@@ -11,8 +11,8 @@ function printStatus(message:string,code:stringOrNumber){
     }
 }
 
-printStatus("Request was Successfull",200)
-printStatus("Resource was not Found",'404')
+printStatuses("Request was Successfull",200)
+printStatuses("Resource was not Found",'404')
 
 
 type role = 'ADMIN' | 'READ_ONLY' | 'WRITE_ONLY'

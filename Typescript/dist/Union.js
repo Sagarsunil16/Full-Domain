@@ -1,17 +1,18 @@
-var user1 = null;
+"use strict";
+let user1 = null;
 function getUser() {
-    var uname = "Sagar";
-    var uage = 22;
+    const uname = "Sagar";
+    const uage = 22;
     user1 = { name: uname, age: uage };
     return user1;
 }
 console.log(getUser());
 function printStatus(message, code) {
     if (typeof (code) === 'string') {
-        console.log("".concat(message, ".status code of ").concat(code.trim()));
+        console.log(`${message}.status code of ${code.trim()}`);
     }
     else {
-        console.log("".concat(message, ".status code od ").concat(code));
+        console.log(`${message}.status code od ${code}`);
     }
 }
 printStatus('Request was successful', 200);

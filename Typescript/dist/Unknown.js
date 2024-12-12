@@ -1,5 +1,6 @@
-var inputVal;
-var uname = "Pavithra";
+"use strict";
+let inputVal;
+let uname = "Pavithra";
 inputVal = 100;
 inputVal = 'Hello, world';
 if (typeof inputVal === 'string') {

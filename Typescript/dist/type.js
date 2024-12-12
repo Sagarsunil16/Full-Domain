@@ -1,14 +1,15 @@
-var str = 'sagar';
-function printStatus(message, code) {
+"use strict";
+const str = 'sagar';
+function printStatuses(message, code) {
     if (typeof code == 'string') {
-        console.log("".concat(message, ". Status code:").concat(code.trim()));
+        console.log(`${message}. Status code:${code.trim()}`);
     }
     else {
-        console.log("".concat(message, ". Status code:").concat(code));
+        console.log(`${message}. Status code:${code}`);
     }
 }
-printStatus("Request was Successfull", 200);
-printStatus("Resource was not Found", '404');
+printStatuses("Request was Successfull", 200);
+printStatuses("Resource was not Found", '404');
 function roleMessage(roles) {
     switch (roles) {
         case "ADMIN":

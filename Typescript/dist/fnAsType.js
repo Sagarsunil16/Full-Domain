@@ -1,13 +1,14 @@
+"use strict";
 function greetuser(user) {
-    var greetmsg = "Hello ".concat(user.name);
+    const greetmsg = `Hello ${user.name}`;
     console.log(greetmsg);
 }
 greetuser({ name: "Pavithra", age: 22 });
-var greet;
+let greet;
 greet = greetuser;
-var newUser = { name: "Sagar", age: 23 };
+let newUser = { name: "Sagar", age: 23 };
 greet(newUser);
-var sum = function (a, b) {
+let summ = (a, b) => {
     console.log(a + b);
 };
-sum(1, 2);
+summ(1, 2);
